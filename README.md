@@ -7,14 +7,10 @@ To start your Phoenix server:
   * Install Node.js dependencies with `npm install` inside the `assets` directory
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+To reproduce the bug, visit `localhost:4004/posts` from your browser.
+Click "New Post", give it a body, and click Save.
+In the Show Post page, click Back.
+In the Listing Post page, click Delete on the line with your new post.
+In the dialog that comes up asking "Are you sure?", click OK.
+If this repro has done its job, the same dialog appears again.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
